@@ -31,7 +31,7 @@ import os
 import pandas as pd
 import numpy as np
 
-directory_in_str = "/home/billy/Desktop/Python02"
+directory_in_str = "Your working directory"
 directory = os.fsencode(directory_in_str)
 
 #Create empty vectors to hold labels
