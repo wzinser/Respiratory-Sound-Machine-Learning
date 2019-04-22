@@ -1,6 +1,6 @@
 # Classifying Respiratory Sounds with Machine Learning
 
-The purpose of this is to use automated machine learning algorithms to classify audio samples to aid in the detection of respiratory conditions (wheezes/crackles). 
+The purpose of this repository is to use automated machine learning algorithms to classify audio samples to aid in the detection of respiratory conditions (wheezes/crackles). This is accomplished by performing a spectrogram of each sound of the respiratory cycle to display a visual representation of the spectrum of frequencies in the signal. This image is then grayscaled, downsized, and flattened to a vector so that it can be used as input into a neural network.
 
 ## Getting Started
 
