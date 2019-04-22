@@ -75,43 +75,25 @@ df_Wheezes.to_csv('Wheezes Labels.csv', index = False, header= False)
 
 Each text file is read and converted into a [1 x (# of breaths)] array. For example the following text file containing the labels would be converted to a csv file containing:
 
-```
-Example:
-#  Inhale  Exhale Crackles Wheeze
-1   0.021	  0.407	    0	      0 
-2   0.407	  2.122	    0	      0
-3   2.122	  3.522	    1	      0
-4   3.522	  5.921	    0	      0
-5   5.921	  7.793	    1	      0
-6   7.793	  9.639	    0	      0
-7   9.639	  11.291	   0	      0
-8   11.291	 13.213	   1       0
-9   13.213	 14.894	   1	      0
-10  14.894	 16.383	   1	      0
-11  16.383	 17.862	   0	      0
-12  17.862	 19.073	   0	      0
-13  19.073	 19.951	   0	      0
-
-Crackle_Label = [0 0 1 0 1 0 0 1 1 1 0 0 0] 
-Wheeze_Label  = [0 0 0 0 0 0 0 0 0 0 0 0 0]
-
-```
-The script iterates through each file in the folder, appends the array for each .txt file, adds all of them to a dataframe, and then converts the dataframe to a comma separated value file.
-
-
 | #  | Inhale | Exhale | Crackle | Wheeze |
 | ---|--------| ------ | --------|------- |
 |1   |  0.021 | 0.407  |	    0   |	      0| 
+|2   |0.407   |	  2.122	|    0   |	      0|
+|3   |2.122   |	  3.522	|    1   |	      0|
+|4   |3.522   |	  5.921	|    0   |	      0|
+|5   |5.921   |	  7.793	|    1   |	      0|
+|6   |7.793   |	  9.639	|    0   |	      0|
+|7   |9.639   |	  11.291|	   0   |	      0|
+|8   |11.291  |	 13.213|	   1    |       0|
+|9   |13.213  |	 14.894|	   1    |	      0|
+|10  |14.894  |	 16.383|	   1    |	      0|
+|11  |16.383  |	 17.862|	   0    |	      0|
+|12  |17.862  |	 19.073|	   0    |	      0|
+|13  |19.073  |	 19.951|	   0    |	      0|
 
-|2   |0.407|	  2.122	|    0|	      0|
-|3   |2.122|	  3.522	|    1|	      0|
-|4   |3.522|	  5.921	|    0|	      0|
-|5   |5.921|	  7.793	|    1|	      0|
-|6   |7.793|	  9.639	|    0|	      0|
-|7   |9.639|	  11.291|	   0|	      0|
-|8   |11.291|	 13.213|	   1|       0|
-|9   |13.213|	 14.894|	   1|	      0|
-|10  |14.894|	 16.383|	   1|	      0|
-|11  |16.383|	 17.862|	   0|	      0|
-|12  |17.862|	 19.073|	   0|	      0|
-|13  |19.073|	 19.951|	   0|	      0|
+```
+Crackle_Label = [0 0 1 0 1 0 0 1 1 1 0 0 0] 
+Wheeze_Label  = [0 0 0 0 0 0 0 0 0 0 0 0 0]
+```
+
+The script iterates through each file in the folder, appends the array for each .txt file, adds all of them to a dataframe, and then converts the dataframe to a comma separated value file.
