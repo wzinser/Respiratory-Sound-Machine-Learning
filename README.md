@@ -1,6 +1,6 @@
-# Project Title
+# Classifying Respiratory Sounds with Machine Learning
 
-One Paragraph of project description goes here
+The purpose of this is to use automated machine learning algorithms to classify audio samples to aid in the detection of respiratory conditions (wheezes/crackles)
 
 ## Getting Started
 
