@@ -98,9 +98,8 @@ Wheeze_Label  = [0 0 0 0 0 0 0 0 0 0 0 0 0]
 ```
 The script iterates through each file in the folder, appends the array for each .txt file, adds all of them to a dataframe, and then converts the dataframe to a comma separated value file.
 
-````
+
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
-````
