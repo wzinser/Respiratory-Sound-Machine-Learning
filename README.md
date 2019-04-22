@@ -2,10 +2,6 @@
 
 The purpose of this repository is to use automated machine learning algorithms to classify audio samples to aid in the detection of respiratory conditions (wheezes/crackles). This is accomplished by performing a spectrogram of each sound of the respiratory cycle to display a visual representation of the spectrum of frequencies in the signal. This image is then grayscaled, downsized, and flattened to a vector so that it can be used as input into a neural network.
 
-## Getting Started
-
-The database that contains all of the respiratory sounds and labels can be located at: https://bhichallenge.med.auth.gr/
-
 ### Prerequisites
 
 Python 3.3
@@ -15,6 +11,8 @@ Python 3.3
 All code for this project was written and executed in Jupyter Notebook on Ubuntu 18.04 LTS (Virtual Machine). Python packages were managed with Anaconda. 
 
 ### Data Labels
+
+The database that contains all of the respiratory sounds and labels can be located at: https://bhichallenge.med.auth.gr/
 
 Each entry in the database consists of an audio file (.wav) and a text file that labels each respiratory cycle in the following format
 
